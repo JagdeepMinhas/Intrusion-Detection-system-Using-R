@@ -40,15 +40,26 @@ The goal of this project is to identify anomalies in electric energy consumption
 
 5. **Anomaly Detection:** Detect anomalies by comparing log-likelihood values obtained from the trained HMM.
 
+Calculated Log-Likelihood of Normal Dataset:
+The log-likelihood of the normal dataset with no anomalies was calculated.
 
-Calculate the log-likelihood of normal dataset with no anomalies
-Filter the data to select Monday's data between 6:00:00 and 10:00:00, remove rows with missing values, and scale the "Global_active_power" and "Global_intensity" columns.
-Create a 16-state model for the filtered and scaled normal dataset.
-Store the Loglik and BIC values of the normal dataset in vectors for later comparison.
-Filter and scale three anomaly datasets (df_anomaly1, df_anomaly2, and df_anomaly3) and create models with 16 states for each.
-Append the Loglik and BIC values of the anomaly models to the vectors for comparison with the normal dataset.
-Store the Log-likelihood and BIC values of the normal and anomaly datasets in a table.
-...
+Filtered and Scaled Monday's Data:
+The data for Mondays between 6:00:00 and 10:00:00 was filtered, missing values were removed, and the "Global_active_power" and "Global_intensity" columns were scaled.
+
+Created a 16-State Model for Normal Dataset:
+A 16-state model was created for the filtered and scaled normal dataset.
+
+Stored Loglik and BIC Values for Normal Dataset:
+The Loglik and BIC values of the normal dataset were stored in vectors for later comparison.
+
+Filtered and Scaled Anomaly Datasets:
+The anomaly datasets (df_anomaly1, df_anomaly2, and df_anomaly3) were filtered and scaled, and models with 16 states were created for each.
+
+Appended Loglik and BIC Values of Anomaly Models:
+The Loglik and BIC values of the anomaly models were appended to the vectors for comparison with the normal dataset.
+
+Stored Log-Likelihood and BIC Values in a Table:
+The Log-likelihood and BIC values of both the normal and anomaly datasets were stored in a table....
 ```
 
 2. Apply PCA:
