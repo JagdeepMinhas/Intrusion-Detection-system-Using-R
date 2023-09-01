@@ -2,7 +2,6 @@
 
 # Electric Energy Consumption Anomaly Detection Project
 
-![Project Banner](project_banner_image.jpg) <!-- Replace with an image relevant to your project -->
 
 This repository contains the code and documentation for an electric energy consumption anomaly detection project. The project utilizes Principal Component Analysis (PCA) and Hidden Markov Models (HMM) for detecting anomalies in electric energy consumption datasets.
 
